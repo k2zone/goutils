@@ -1,4 +1,4 @@
-module goutils
+module github.com/k2zone/goutils
 
 go 1.14
 
