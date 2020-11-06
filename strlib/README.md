@@ -3,7 +3,7 @@
 
 ## 功能列表
 ### 整数字符串转切片
-```
+```golang
 var (
     data = "1,2,3"
     var ret []int
@@ -12,11 +12,12 @@ _ = strlib.SplitInts(data, &ret)
 ```
 只支持整数（包含有符号和无符号）转换
 ### 整数切片转字符串
-```
+```golang
 var (
     data = []int{1, 2, 3}
 )
-res := strlib.JoinInts(data)
+// res := strlib.JoinInts(data)
+res := strlib.JoinInts(&data)
 fmt.Println(res) // 输出1,2,3
 ```
 只支持整数（包含有符号和无符号）转换
